@@ -30,6 +30,10 @@ import laravel from "./tech/laravel.png";
 import codeigniter from "./tech/codeigniter.png";
 import api from "./tech/api.png";
 import json from "./tech/json.png";
+import jquery from "./tech/jquery.png";
+import pinia from "./tech/pinia.png";
+import jira from "./tech/jira.png";
+import cakephp from "./tech/cakephp.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -77,5 +81,9 @@ export {
   laravel,
   codeigniter,
   api,
-  json
+  json,
+  jquery,
+  pinia,
+  jira,
+  cakephp
 };

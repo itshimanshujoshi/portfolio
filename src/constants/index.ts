@@ -23,7 +23,6 @@ import {
   mongodb,
   git,
   figma,
-  docker,
   logic,
   vue,
   vuex,
@@ -33,7 +32,11 @@ import {
   laravel,
   codeigniter,
   api,
-  json
+  json,
+  pinia,
+  jquery,
+  jira,
+  cakephp
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -44,6 +47,14 @@ export const navLinks: TNavLink[] = [
   {
     id: "work",
     title: "Work",
+  },
+  {
+    id: "tech-stack",
+    title: "Tech Stack",
+  },
+  {
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -59,27 +70,30 @@ const services: TService[] = [
 ];
 
 const technologies: TTechnology[] = [
-  { name: "HTML 5", icon: html },
-  { name: "CSS 3", icon: css },
-  { name: "JavaScript (ES6+)", icon: javascript },
-  { name: "TypeScript", icon: typescript },
-  { name: "React JS", icon: reactjs },
-  { name: "Redux Toolkit", icon: redux },
-  { name: "Vue.js", icon: vue },
-  { name: "Pinia / Vuex", icon: vuex },
-  { name: "Tailwind CSS", icon: tailwind },
-  { name: "Bootstrap 4/5", icon: bootstrap },
-  { name: "Node.js", icon: nodejs },
-  { name: "PHP", icon: php },
-  { name: "Laravel", icon: laravel },
-  { name: "CodeIgniter", icon: codeigniter },
-  { name: "MySQL", icon: mysql },
-  { name: "MongoDB", icon: mongodb },
-  { name: "Git / GitHub", icon: git },
-  { name: "Figma", icon: figma },
-  { name: "Docker", icon: docker },
-  { name: "RESTful APIs", icon: api },
-  { name: "JSON / AJAX", icon: json },
+  { name: "HTML 5", icon: html, category: "Frontend" },
+  { name: "CSS 3", icon: css, category: "Frontend" },
+  { name: "JavaScript (ES6+)", icon: javascript, category: "Frontend" },
+  { name: "TypeScript", icon: typescript, category: "Frontend" },
+  { name: "React JS", icon: reactjs, category: "Frontend" },
+  { name: "Redux Toolkit", icon: redux, category: "Frontend" },
+  { name: "Vue.js", icon: vue, category: "Frontend" },
+  { name: "Vuex", icon: vuex, category: "Frontend" },
+  { name: "Pinia", icon: pinia, category: "Frontend" },
+  { name: "Tailwind CSS", icon: tailwind, category: "Frontend" },
+  { name: "Bootstrap 4/5", icon: bootstrap, category: "Frontend" },
+  { name: "Node.js", icon: nodejs, category: "Backend" },
+  { name: "PHP", icon: php, category: "Backend" },
+  { name: "Laravel", icon: laravel, category: "Backend" },
+  { name: "CodeIgniter", icon: codeigniter, category: "Backend" },
+  { name: "Cakephp", icon: cakephp, category: "Backend" },
+  { name: "MySQL", icon: mysql, category: "Database" },
+  { name: "MongoDB", icon: mongodb, category: "Database" },
+  { name: "Git / GitHub", icon: git, category: "Tools" },
+  { name: "Figma", icon: figma, category: "Tools" },
+  { name: "Jquery", icon: jquery, category: "Backend" },
+  { name: "RESTful APIs", icon: api, category: "Backend" },
+  { name: "JSON / AJAX", icon: json, category: "Backend" },
+  { name: "JIRA", icon: jira, category: "Tools" },
 ];
 
 

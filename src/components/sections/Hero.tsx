@@ -1,6 +1,7 @@
 import { styles } from "../../constants/styles";
 import { ComputersCanvas } from "../canvas";
 import { config } from "../../constants/config";
+import { Typewriter } from "react-simple-typewriter";
 
 const Hero = () => {
   return (
@@ -17,6 +18,28 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#915EFF]">{config.hero.name}</span>
           </h1>
+           <p className={`${styles.heroSubText} text-white-100 mt-2`}>
+            <Typewriter
+              words={[
+                "A Frontend Developer.",
+                "A Full Stack Engineer.",
+                "A Problem Solver.",
+                "A Passionate Learner.",
+                "A Vue & React Enthusiast.",
+                "A JavaScript and TypeScript Developer.",
+                "A UI/UX Focused Engineer.",
+                "An API Integrator.",
+                "A Lifelong Learner.",
+              ]}
+
+              loop={true}
+              cursor
+              cursorStyle="|"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={2000}
+            />
+          </p>
           <p className={`${styles.heroSubText} text-white-100 mt-2`}>
             {config.hero.p[0]} <br className="hidden sm:block" />
             {config.hero.p[1]}
