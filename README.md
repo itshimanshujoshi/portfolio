@@ -33,9 +33,7 @@ I'm a **Full Stack Developer** with **4+ years of experience** building scalable
 ## 📫 Contact Information
 
 - **Email**: hjoshi365.hj@gmail.com
-- **Phone**: +91 8950188696
 - **LinkedIn**: [linkedin.com/in/itshimanshujoshi](https://www.linkedin.com/in/itshimanshujoshi)
-- **Location**: Yamuna Nagar, Haryana, India
 
 ## 🛠️ Tech Stack
 
