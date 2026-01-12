@@ -13,6 +13,7 @@ import Experience from "./sections/Experience";
 import Works from "./sections/Works";
 import Feedbacks from "./sections/Feedbacks";
 import Contact from "./sections/Contact";
+import Resume from "./sections/Resume";
 import CanvasLoader from "./layout/Loader";
 
 export {
@@ -24,6 +25,7 @@ export {
   Works,
   Feedbacks,
   Contact,
+  Resume,
   CanvasLoader,
   EarthCanvas,
   BallCanvas,

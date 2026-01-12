@@ -40,13 +40,13 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "",
+    title: "Himanshu Joshi | Full Stack Developer",
     fullName: "Himanshu Joshi",
     email: "hjoshi365.hj@gmail.com",
   },
   hero: {
     name: "Himanshu Joshi",
-    p: ["Full-Stack Developer crafting scalable web solutions with React, Vue, and PHP — where performance meets clean design."],
+    p: ["Full Stack Developer with 4+ years of experience", "Specializing in React.js, TypeScript, Vue.js, and modern web architectures", "Building scalable, high-performance applications with 30%+ faster load times"],
   },
   contact: {
     p: "Get in touch",
@@ -67,7 +67,7 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-     content: `I'm a passionate software engineer with expertise in JavaScript, TypeScript, and PHP, specializing in frameworks like React, Vue.js, Laravel and Codeigniter. I focus on building efficient, scalable, and user-friendly web applications that deliver real value. A fast learner and team player, I love turning complex ideas into clean, performant solutions. Let's build something great together!`,
+     content: `Results-driven Full Stack Developer with 4+ years of experience building scalable, high-performance web applications. Specialized in React.js, Redux Toolkit, TypeScript, and modern frontend architectures with proven track record of reducing page load times by 30%+ and improving application stability by 40%. Strong expertise in REST API/GraphQL integration, JWT authentication, and full-stack development using Node.js, Laravel, and PHP frameworks. Passionate about delivering production-ready solutions that combine clean code with exceptional performance.`,
     },
     experience: {
       p: "What I have done so far",

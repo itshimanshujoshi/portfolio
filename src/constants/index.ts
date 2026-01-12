@@ -32,7 +32,6 @@ import {
   laravel,
   codeigniter,
   api,
-  json,
   pinia,
   jquery,
   jira,
@@ -46,15 +45,19 @@ export const navLinks: TNavLink[] = [
   },
   {
     id: "work",
-    title: "Work",
+    title: "Experience",
   },
   {
     id: "tech-stack",
-    title: "Tech Stack",
+    title: "Skills",
   },
   {
     id: "projects",
     title: "Projects",
+  },
+  {
+    id: "resume",
+    title: "Resume",
   },
   {
     id: "contact",
@@ -70,30 +73,40 @@ const services: TService[] = [
 ];
 
 const technologies: TTechnology[] = [
-  { name: "HTML 5", icon: html, category: "Frontend" },
-  { name: "CSS 3", icon: css, category: "Frontend" },
-  { name: "JavaScript (ES6+)", icon: javascript, category: "Frontend" },
+  // Frontend Technologies
+  { name: "React.js", icon: reactjs, category: "Frontend" },
+  { name: "Next.js", icon: reactjs, category: "Frontend" },
+  { name: "Vue.js 3", icon: vue, category: "Frontend" },
   { name: "TypeScript", icon: typescript, category: "Frontend" },
-  { name: "React JS", icon: reactjs, category: "Frontend" },
+  { name: "JavaScript (ES6+)", icon: javascript, category: "Frontend" },
   { name: "Redux Toolkit", icon: redux, category: "Frontend" },
-  { name: "Vue.js", icon: vue, category: "Frontend" },
+  { name: "RTK Query", icon: redux, category: "Frontend" },
   { name: "Vuex", icon: vuex, category: "Frontend" },
   { name: "Pinia", icon: pinia, category: "Frontend" },
+  { name: "HTML5", icon: html, category: "Frontend" },
+  { name: "CSS3", icon: css, category: "Frontend" },
   { name: "Tailwind CSS", icon: tailwind, category: "Frontend" },
-  { name: "Bootstrap 4/5", icon: bootstrap, category: "Frontend" },
+  { name: "Bootstrap", icon: bootstrap, category: "Frontend" },
+  { name: "jQuery", icon: jquery, category: "Frontend" },
+
+  // Backend Technologies
   { name: "Node.js", icon: nodejs, category: "Backend" },
-  { name: "PHP", icon: php, category: "Backend" },
   { name: "Laravel", icon: laravel, category: "Backend" },
-  { name: "CodeIgniter", icon: codeigniter, category: "Backend" },
-  { name: "Cakephp", icon: cakephp, category: "Backend" },
+  { name: "CodeIgniter 4", icon: codeigniter, category: "Backend" },
+  { name: "CakePHP", icon: cakephp, category: "Backend" },
+  { name: "PHP", icon: php, category: "Backend" },
+  { name: "RESTful APIs", icon: api, category: "Backend" },
+  { name: "GraphQL", icon: api, category: "Backend" },
+
+  // Database
   { name: "MySQL", icon: mysql, category: "Database" },
   { name: "MongoDB", icon: mongodb, category: "Database" },
+
+  // Tools & Workflow
   { name: "Git / GitHub", icon: git, category: "Tools" },
-  { name: "Figma", icon: figma, category: "Tools" },
-  { name: "Jquery", icon: jquery, category: "Backend" },
-  { name: "RESTful APIs", icon: api, category: "Backend" },
-  { name: "JSON / AJAX", icon: json, category: "Backend" },
   { name: "JIRA", icon: jira, category: "Tools" },
+  { name: "Figma", icon: figma, category: "Tools" },
+  { name: "Postman", icon: api, category: "Tools" },
 ];
 
 
@@ -155,32 +168,24 @@ const technologies: TTechnology[] = [
 // ];
 const experiences: TExperience[] = [
   {
-    title: "Software Engineer",
-    companyName: "Logic Providers",
+    title: "Software Developer",
+    companyName: "Logic Providers Digital Pvt. Ltd",
     icon: logic,
     iconBg: "#383E56",
-    date: "June 2021 - March 2024",
+    date: "June 2021 - Present",
     points: [
-      "Built responsive and scalable front-end applications using React.js, Vue.js, and TypeScript.",
-      "Developed reusable UI components and integrated REST APIs via Axios and Redux Toolkit.",
-      "Implemented authentication and route protection using JWT and React Router.",
-      "Optimized performance through code-splitting, lazy loading, and reusable hooks.",
-      "Collaborated with cross-functional teams using Agile methodology, Jira, and Git/Bitbucket.",
-    ],
-  },
-  {
-    title: "Software Engineer",
-    companyName: "Logic Providers Digital Pvt. Ltd (Formerly Logic Providers)",
-    icon: logic,
-    iconBg: "#E6DEDD",
-    date: "April 2024 - Present",
-    points: [
-      "Building and maintaining modern web applications using React.js, Redux Toolkit, and TypeScript.",
-      "Architected scalable state management using Redux Toolkit and RTK Query.",
-      "Integrated secure authentication and role-based access using JWT.",
-      "Refactored legacy codebases to modern React hooks and reusable components.",
-      "Delivered key projects including ARCC and Seoul Spice, enhancing usability and scalability.",
-      "Focused on improving SEO, page performance, and code maintainability.",
+      "Architected and developed production-grade web applications using React.js, Redux Toolkit, TypeScript, and RTK Query for enterprise clients including ARCC and Seoul Spice",
+      "Reduced page load time by 30%+ through implementation of code-splitting, lazy loading, dynamic imports, and optimized component re-renders",
+      "Designed and implemented scalable state management architecture using Redux Toolkit and RTK Query, improving application stability and data consistency by 40%",
+      "Refactored legacy codebases from class components to modern React Hooks and functional components, improving code maintainability and reducing technical debt",
+      "Implemented role-based access control (RBAC) and secure JWT authentication workflows, reducing unauthorized access incidents by 30%",
+      "Built reusable UI component library with TypeScript interfaces, increasing development velocity and reducing code duplication across projects",
+      "Integrated RESTful APIs and GraphQL endpoints with proper error handling, loading states, and optimized caching strategies",
+      "Improved SEO performance through server-side rendering (SSR), meta tag optimization, and React best practices",
+      "Developed internal real-time business dashboards that increased monitoring efficiency by 40%",
+      "Automated product and price update workflows, decreasing manual effort and errors by 60%",
+      "Optimized MySQL database queries and implemented indexing strategies, reducing query execution time by 25%",
+      "Collaborated in Agile/Scrum environment, participating in sprint planning, code reviews, and cross-functional team coordination",
     ],
   },
 ];
@@ -214,16 +219,16 @@ const testimonials: TTestimonial[] = [
 ];
 const projects: TProject[] = [
   {
-    name: "LoyaltyLive",
+    name: "LoyaltyLive – Admin Panel",
     description:
-      "A robust admin panel for managing mobile app content and user configurations. Features dynamic UI with reusable components, OAuth2.0 integration for secure social logins, and optimized performance through memoization and lazy loading.",
+      "Developed scalable admin panel for mobile app content management and user configuration. Implemented form validation using React Hook Form, JWT and OAuth 2.0 authentication flows with token refresh mechanisms. Optimized rendering performance using React.memo, useMemo, and useCallback hooks.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "redux",
+        name: "redux-toolkit",
         color: "green-text-gradient",
       },
       {
@@ -233,9 +238,9 @@ const projects: TProject[] = [
     ]
   },
   {
-    name: "ARCC",
+    name: "ARCC – Messaging Platform",
     description:
-      "A scalable messaging web application with feature-rich admin panel for managing users and posts. Includes configurable signup flows, post moderation tools, and role-based access control with JWT authentication.",
+      "Built feature-rich messaging platform with admin panel for user management and content moderation. Implemented client-side routing with React Router including protected routes and lazy loading. Created responsive, accessible UI components following WCAG 2.1 guidelines.",
     tags: [
       {
         name: "react",
@@ -246,34 +251,53 @@ const projects: TProject[] = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "rest-api",
         color: "pink-text-gradient",
       },
     ]
   },
   {
-    name: "Seoul Spice",
+    name: "Seoul Spice – Restaurant Management",
     description:
-      "A comprehensive restaurant management interface with order tracking, menu control, and analytics. Features data-driven UI components, state management with Pinia, and optimized rendering for an enhanced user experience.",
+      "Developed restaurant management interface for order tracking, menu control, and sales analytics. Implemented server-state caching and automatic background refetching using React Query. Optimized bundle size by 40% through code-splitting and tree-shaking.",
     tags: [
       {
-        name: "vue",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "pinia",
+        name: "react-query",
         color: "green-text-gradient",
       },
       {
-        name: "API",
+        name: "typescript",
         color: "pink-text-gradient",
       },
     ]
   },
   {
-    name: "Life Celebration",
+    name: "Tasket – AI Task Management",
     description:
-      "A platform for celebrating and commemorating life's milestones. Features an intuitive admin panel with Vue.js for managing events, user registration with Laravel authentication, and dashboards displaying reports and analytics.",
+      "Built intelligent task management application with AI-powered prioritization algorithms. Implemented server-side rendering with Next.js for improved SEO and performance. Designed MongoDB schema with proper indexing for efficient time-based task queries.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ai-apis",
+        color: "pink-text-gradient",
+      },
+    ]
+  },
+  {
+    name: "Life Celebration Platform",
+    description:
+      "Platform for celebrating life's milestones with intuitive admin panel for managing events. Features user registration with Laravel authentication, dashboards displaying reports and analytics, and seamless integration of frontend and backend.",
     tags: [
       {
         name: "laravel",
@@ -284,15 +308,15 @@ const projects: TProject[] = [
         color: "green-text-gradient",
       },
       {
-        name: "javascript",
+        name: "mysql",
         color: "pink-text-gradient",
       },
     ]
   },
   {
-    name: "CanXida",
+    name: "CanXida E-Commerce",
     description:
-      "A full-featured e-commerce platform with admin panel for managing products, orders, and user data. Includes secure payment gateway integration, optimized performance, and user-friendly frontend for seamless shopping experience.",
+      "Full-featured e-commerce platform with admin panel for managing products, orders, and user data. Includes secure payment gateway integration, inventory management, order processing, and optimized performance for seamless shopping experience.",
     tags: [
       {
         name: "codeigniter",
@@ -303,7 +327,7 @@ const projects: TProject[] = [
         color: "green-text-gradient",
       },
       {
-        name: "sql",
+        name: "mysql",
         color: "pink-text-gradient",
       },
     ]
