@@ -131,7 +131,7 @@ const About = () => {
           <div className="absolute -bottom-2 -right-2 w-12 h-12 border-b-2 border-r-2 border-blue-500" />
 
           {/* Content Box */}
-          <div className="glass-effect rounded-xl p-6 md:p-8 border border-purple-500/30 max-w-4xl relative overflow-hidden">
+          <div className="glass-effect rounded-xl p-6 md:p-8 border border-purple-500/30 relative overflow-hidden">
             {/* Animated Background Pattern */}
             <div className="absolute inset-0 opacity-5">
               <div className="cyber-grid w-full h-full" />

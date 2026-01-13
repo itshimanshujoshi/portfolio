@@ -94,7 +94,7 @@ const Resume = () => {
           variants={fadeIn("up", "spring", 0.2, 0.75)}
           className="mt-8 sm:mt-12"
         >
-          <div className="glass-effect rounded-2xl p-5 sm:p-8 border border-purple-500/30 max-w-4xl mx-auto">
+          <div className="glass-effect rounded-2xl p-5 sm:p-8 border border-purple-500/30 mx-auto">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-5 sm:gap-6">
               {/* Left Side - Info */}
               <div className="flex-1 w-full">
@@ -195,7 +195,7 @@ const Resume = () => {
           variants={fadeIn("up", "spring", 0.4, 0.75)}
           className="mt-8 sm:mt-12 text-center"
         >
-          <div className="glass-effect rounded-xl p-5 sm:p-8 border border-purple-500/20 max-w-2xl mx-auto">
+          <div className="glass-effect rounded-xl p-5 sm:p-8 border border-purple-500/20 mx-auto">
             <h3 className="text-white font-bold text-lg sm:text-xl mb-2 sm:mb-3">Interested in Working Together?</h3>
             <p className="text-gray-400 text-sm sm:text-base mb-5 sm:mb-6">
               I'm actively looking for exciting opportunities. Let's discuss how I can contribute to your team.
