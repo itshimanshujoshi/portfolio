@@ -51,7 +51,7 @@ export const config: TConfig = {
     email: "hjoshi365.hj@gmail.com",
   },
   social: {
-    github: "https://github.com/himanshu-joshi",
+    github: "https://github.com/itshimanshujoshi",
     linkedin: "https://www.linkedin.com/in/itshimanshujoshi",
     email: "hjoshi365.hj@gmail.com",
     phone: "+91 8950188696",
