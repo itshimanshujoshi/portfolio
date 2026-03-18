@@ -137,30 +137,60 @@ const About = () => {
               <div className="cyber-grid w-full h-full" />
             </div>
 
-            <p className="text-secondary text-sm sm:text-[17px] leading-relaxed sm:leading-[30px] relative z-10">
-              {config.sections.about.content}
-            </p>
+            {/* Two-column: image + text */}
+            <div className="relative z-10 flex flex-col md:flex-row gap-8 items-start">
+              {/* Profile Image */}
+              <motion.div
+                variants={fadeIn("right", "spring", 0.2, 0.8)}
+                className="flex-shrink-0 flex justify-center w-full md:w-auto"
+              >
+                <div className="relative w-40 h-40 md:w-48 md:h-48">
+                  {/* Glow */}
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-500 via-blue-500 to-indigo-500 blur-xl opacity-40" />
+                  {/* Border frame */}
+                  <div className="relative w-full h-full rounded-2xl p-0.5 bg-gradient-to-br from-purple-500 via-blue-500 to-indigo-500">
+                    <div className="w-full h-full rounded-2xl overflow-hidden bg-black/50">
+                      <img
+                        src="/profile2.png"
+                        alt={config.hero.name}
+                        className="w-full h-full object-cover object-top"
+                      />
+                    </div>
+                  </div>
+                  {/* Corner decorations */}
+                  <div className="absolute -top-1 -left-1 w-4 h-4 border-t-2 border-l-2 border-purple-400" />
+                  <div className="absolute -bottom-1 -right-1 w-4 h-4 border-b-2 border-r-2 border-blue-400" />
+                </div>
+              </motion.div>
 
-            {/* Accent Line */}
-            <div className="mt-4 h-0.5 w-24 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full" />
+              {/* Text + Stats */}
+              <div className="flex-1">
+                <p className="text-secondary text-sm sm:text-[17px] leading-relaxed sm:leading-[30px]">
+                  {config.sections.about.content}
+                </p>
 
-            {/* Stats Grid */}
-            <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
-              {[
-                { value: "4+", label: "Years Exp" },
-                { value: "30%", label: "Faster Load" },
-                { value: "40%", label: "Stability ↑" },
-                { value: "10+", label: "Projects" }
-              ].map((stat, index) => (
-                <motion.div
-                  key={index}
-                  className="glass-effect rounded-lg p-2 sm:p-3 border border-purple-500/20 text-center hover:border-purple-500/50 transition-all duration-300"
-                  whileHover={{ scale: 1.05, y: -5 }}
-                >
-                  <div className="text-xl sm:text-2xl font-bold futuristic-text">{stat.value}</div>
-                  <div className="text-[10px] sm:text-xs text-gray-400 mt-1">{stat.label}</div>
-                </motion.div>
-              ))}
+                {/* Accent Line */}
+                <div className="mt-4 h-0.5 w-24 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full" />
+
+                {/* Stats Grid */}
+                <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
+                  {[
+                    { value: "4+", label: "Years Exp" },
+                    { value: "30%", label: "Faster Load" },
+                    { value: "40%", label: "Stability ↑" },
+                    { value: "10+", label: "Projects" }
+                  ].map((stat, index) => (
+                    <motion.div
+                      key={index}
+                      className="glass-effect rounded-lg p-2 sm:p-3 border border-purple-500/20 text-center hover:border-purple-500/50 transition-all duration-300"
+                      whileHover={{ scale: 1.05, y: -5 }}
+                    >
+                      <div className="text-xl sm:text-2xl font-bold futuristic-text">{stat.value}</div>
+                      <div className="text-[10px] sm:text-xs text-gray-400 mt-1">{stat.label}</div>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </motion.div>
