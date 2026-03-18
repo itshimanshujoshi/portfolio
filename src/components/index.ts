@@ -7,6 +7,7 @@ import {
 } from "./canvas";
 import Hero from "./sections/Hero";
 import Navbar from "./layout/Navbar";
+import Footer from "./layout/Footer";
 import About from "./sections/About";
 import Tech from "./sections/Tech";
 import Experience from "./sections/Experience";
@@ -14,11 +15,13 @@ import Works from "./sections/Works";
 import Feedbacks from "./sections/Feedbacks";
 import Contact from "./sections/Contact";
 import Resume from "./sections/Resume";
+import Services from "./sections/Services";
 import CanvasLoader from "./layout/Loader";
 
 export {
   Hero,
   Navbar,
+  Footer,
   About,
   Tech,
   Experience,
@@ -26,6 +29,7 @@ export {
   Feedbacks,
   Contact,
   Resume,
+  Services,
   CanvasLoader,
   EarthCanvas,
   BallCanvas,

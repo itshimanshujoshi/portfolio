@@ -4,12 +4,14 @@ import {
   About,
   Contact,
   Experience,
+  Footer,
   Hero,
   Navbar,
+  Resume,
+  Services,
+  StarsCanvas,
   Tech,
   Works,
-  Resume,
-  StarsCanvas,
 } from "./components";
 import { useEffect } from "react";
 import { config } from "./constants/config";
@@ -32,11 +34,13 @@ const App = () => {
         <Experience />
         <Tech />
         <Works />
+        <Services />
         <Resume />
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );

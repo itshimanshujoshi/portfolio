@@ -10,6 +10,12 @@ type TConfig = {
     fullName: string;
     email: string;
   };
+  social: {
+    github: string;
+    linkedin: string;
+    email: string;
+    phone: string;
+  };
   hero: {
     name: string;
     p: string[];
@@ -43,6 +49,12 @@ export const config: TConfig = {
     title: "Himanshu Joshi | Full Stack Developer",
     fullName: "Himanshu Joshi",
     email: "hjoshi365.hj@gmail.com",
+  },
+  social: {
+    github: "https://github.com/himanshu-joshi",
+    linkedin: "https://www.linkedin.com/in/itshimanshujoshi",
+    email: "hjoshi365.hj@gmail.com",
+    phone: "+91 8950188696",
   },
   hero: {
     name: "Himanshu Joshi",
