@@ -55,10 +55,7 @@ export const navLinks: TNavLink[] = [
     id: "projects",
     title: "Projects",
   },
-  {
-    id: "services",
-    title: "Services",
-  },
+  // { id: "services", title: "Services" }, // unhide when targeting freelance
   {
     id: "resume",
     title: "Resume",

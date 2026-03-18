@@ -41,7 +41,7 @@ const Hero = () => {
         {/* Text Content */}
         <div className="relative flex-1 max-w-4xl">
 
-          {/* Availability badge */}
+          {/* <-- Availability badge: uncomment when targeting freelance
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -54,6 +54,7 @@ const Hero = () => {
             </span>
             <span className="text-emerald-400 text-xs font-mono">Available for freelance projects</span>
           </motion.div>
+          --> */}
 
           {/* Main Heading */}
           <motion.h1

@@ -103,7 +103,7 @@ const Services = () => {
         </motion.p>
 
         {/* Service Cards */}
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
@@ -114,17 +114,16 @@ const Services = () => {
                   : "border-white/8 bg-white/[0.02] hover:border-teal-500/30"
               }`}
             >
-              {service.highlight && (
-                <div className="absolute -top-3 left-6">
-                  <span className="px-3 py-1 text-[10px] font-mono uppercase tracking-widest rounded-full bg-teal-500/20 border border-teal-500/40 text-teal-400">
-                    Most requested
-                  </span>
-                </div>
-              )}
-
               <div className="flex items-start justify-between mb-4">
-                <div className="p-2.5 rounded-lg bg-teal-500/10 border border-teal-500/20 text-teal-400">
-                  {service.icon}
+                <div className="flex flex-col items-start gap-2">
+                  {service.highlight && (
+                    <span className="px-2.5 py-0.5 text-[10px] font-mono uppercase tracking-widest rounded-full bg-teal-500/20 border border-teal-500/40 text-teal-400 whitespace-nowrap">
+                      Most requested
+                    </span>
+                  )}
+                  <div className="w-fit p-2.5 rounded-lg bg-teal-500/10 border border-teal-500/20 text-teal-400">
+                    {service.icon}
+                  </div>
                 </div>
                 <div className="text-right">
                   <div className="text-white font-bold text-lg">{service.price}</div>
