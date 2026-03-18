@@ -1,92 +1,107 @@
-# Himanshu Joshi - Full Stack Developer Portfolio
+# Himanshu Joshi — Full Stack Developer
 
-A modern, responsive 3D portfolio website built with React.js, TypeScript, Three.js, and Tailwind CSS. This portfolio showcases my skills, projects, and professional experience as a Full Stack Developer.
-
-![Portfolio Banner](https://img.shields.io/badge/Portfolio-Live-brightgreen?style=for-the-badge)
+[![Live](https://img.shields.io/badge/Portfolio-Live-14b8a6?style=for-the-badge)](https://himanshujoshi.vercel.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/itshimanshujoshi)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/itshimanshujoshi)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white)](https://threejs.org/)
 
-## 🚀 Live Demo
+---
 
-Visit my portfolio: [https://himanshujoshi.vercel.app](https://himanshujoshi.vercel.app)
+## About Me
 
-## 👨‍💻 About Me
+I'm a **Full Stack Developer with 4+ years of experience** building scalable, high-performance web applications for enterprise clients. Currently at **Logic Providers Digital Pvt. Ltd**, working across the full stack with a strong focus on React.js, TypeScript, and modern frontend architecture.
 
-I'm a **Full Stack Developer** with **4+ years of experience** building scalable, high-performance web applications. I specialize in:
+| | |
+|---|---|
+| **Experience** | 4+ years |
+| **Location** | India |
+| **Email** | hjoshi365.hj@gmail.com |
+| **LinkedIn** | [itshimanshujoshi](https://www.linkedin.com/in/itshimanshujoshi) |
+| **GitHub** | [itshimanshujoshi](https://github.com/itshimanshujoshi) |
 
-- **Frontend**: React.js, Next.js, Vue.js 3, Nuxt.js, TypeScript, Redux Toolkit, RTK Query
-- **Backend**: Node.js, Laravel, CodeIgniter 4, CakePHP, PHP, RESTful APIs, GraphQL
-- **Databases**: MySQL, MongoDB
-- **Cloud & DevOps**: AWS S3, AWS SES, AWS Bedrock, CI/CD Pipelines
-- **Authentication**: JWT, OAuth 2.0, Role-Based Access Control (RBAC)
+---
 
-### Key Achievements
+## Key Achievements
 
-✨ Reduced page load times by **30%+** through performance optimization
-✨ Improved application stability by **40%** with scalable state management
-✨ Delivered production-ready solutions for enterprise clients including **ARCC** and **Seoul Spice**
-✨ Automated workflows reducing manual effort by **60%**
-✨ Optimized database queries reducing execution time by **25%**
+- **30%+** reduction in page load time via code-splitting, lazy loading, and optimized re-renders
+- **40%** improvement in application stability through scalable Redux Toolkit architecture
+- **60%** reduction in manual effort by automating product and price update workflows
+- **25%** faster MySQL query execution through indexing and query optimization
+- Delivered production-ready applications for **ARCC** and **Seoul Spice** enterprise clients
 
-## 📫 Contact Information
+---
 
-- **Email**: hjoshi365.hj@gmail.com
-- **LinkedIn**: [linkedin.com/in/itshimanshujoshi](https://www.linkedin.com/in/itshimanshujoshi)
+## Tech Stack
 
-## 🛠️ Tech Stack
+**Frontend**
+React.js · Next.js · Vue.js 3 · Nuxt.js · TypeScript · Redux Toolkit · RTK Query · Vuex · Pinia · Tailwind CSS · Bootstrap
 
-This portfolio is built using:
+**Backend**
+Node.js · Laravel · CodeIgniter 4 · CakePHP · PHP · RESTful APIs · GraphQL
 
-### Core Technologies
+**Databases**
+MySQL · MongoDB
 
-- **React.js 18** - UI library
-- **TypeScript** - Type-safe JavaScript
-- **Vite** - Fast build tool and dev server
-- **Three.js** - 3D graphics and animations
-- **Framer Motion** - Smooth animations
-- **Tailwind CSS** - Utility-first CSS framework
+**Auth & Security**
+JWT · OAuth 2.0 · Role-Based Access Control (RBAC)
 
-### Additional Libraries
+**Tools**
+Git · JIRA · Figma · Postman · AWS S3 · AWS SES · AWS Bedrock
 
-- **@react-three/fiber** - React renderer for Three.js
-- **@react-three/drei** - Useful helpers for React Three Fiber
-- **react-vertical-timeline-component** - Timeline component for experience section
-- **react-parallax-tilt** - Tilt effect for cards
-- **@emailjs/browser** - Contact form email integration
-- **react-router-dom** - Client-side routing
+---
 
-### Development Tools
+## Projects
 
-- **ESLint** - Code linting
-- **Prettier** - Code formatting
-- **PostCSS** - CSS transformations
-- **Autoprefixer** - CSS vendor prefixing
+| Project | Stack | Description |
+|---------|-------|-------------|
+| **LoyaltyLive Admin Panel** | React · Redux Toolkit · TypeScript | Scalable admin panel with JWT/OAuth 2.0 auth and optimized rendering |
+| **ARCC Messaging Platform** | React · Redux · REST API | Feature-rich messaging platform with protected routing and WCAG 2.1 compliance |
+| **Seoul Spice Restaurant Management** | React · React Query · TypeScript | Order tracking, menu control, and sales analytics dashboard |
+| **Tasket — AI Task Management** | Next.js · MongoDB · AI APIs | SSR-powered task app with AI prioritization |
+| **Life Celebration Platform** | Laravel · Vue.js · MySQL | Event management platform with analytics dashboard |
+| **CanXida E-Commerce** | CodeIgniter · PHP · MySQL | Full-featured store with payment gateway and inventory management |
 
-## 📁 Project Structure
+---
 
-```
-portfolio/
-├── public/                 # Static assets
-│   ├── desktop_pc/        # 3D model assets
-│   └── planet/            # 3D model assets
-├── src/
-│   ├── assets/            # Images and icons
-│   ├── components/        # React components
-│   │   ├── atoms/         # Small reusable components
-│   │   ├── canvas/        # 3D canvas components
-│   │   ├── layout/        # Layout components
-│   │   └── sections/      # Page sections
-│   ├── constants/         # Configuration and data
-│   ├── hoc/              # Higher-order components
-│   ├── types/            # TypeScript type definitions
-│   └── utils/            # Utility functions
-├── .env                   # Environment variables
-├── package.json          # Dependencies
-├── tailwind.config.cjs   # Tailwind configuration
-├── tsconfig.json         # TypeScript configuration
-└── vite.config.js        # Vite configuration
+## Portfolio Built With
+
+- **React 18 + TypeScript** — component architecture
+- **Vite** — fast dev server and build tool
+- **Three.js + React Three Fiber** — 3D canvas (Earth, Stars)
+- **Framer Motion** — page and section animations
+- **Tailwind CSS** — utility-first styling
+- **EmailJS** — contact form without a backend
+- **Vercel Speed Insights** — real-user performance monitoring
+
+---
+
+## Running Locally
+
+```bash
+git clone https://github.com/itshimanshujoshi/portfolio.git
+cd portfolio
+npm install
 ```
 
-**Made with ❤️ by Himanshu Joshi**
+Create a `.env` file:
+
+```env
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+```bash
+npm run dev
+```
+
+---
+
+## Deployment
+
+Deployed on **Vercel**. Environment variables are configured in the Vercel dashboard under **Settings → Environment Variables**.
+
+---
+
+*Built by Himanshu Joshi*
