@@ -15,7 +15,6 @@ import Works from "./sections/Works";
 import Feedbacks from "./sections/Feedbacks";
 import Contact from "./sections/Contact";
 import Resume from "./sections/Resume";
-import Services from "./sections/Services";
 import CanvasLoader from "./layout/Loader";
 
 export {
@@ -29,7 +28,6 @@ export {
   Feedbacks,
   Contact,
   Resume,
-  Services,
   CanvasLoader,
   EarthCanvas,
   BallCanvas,

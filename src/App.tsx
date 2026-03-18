@@ -8,7 +8,6 @@ import {
   Hero,
   Navbar,
   Resume,
-  Services,
   StarsCanvas,
   Tech,
   Works,
