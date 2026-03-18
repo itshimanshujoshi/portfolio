@@ -55,7 +55,7 @@ const Resume = () => {
   return (
     <div className="relative">
       {/* Background Glow */}
-      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-purple-600/5 rounded-full blur-3xl" />
+      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-teal-600/5 rounded-full blur-3xl" />
 
       <div className="relative z-10">
         <Header
@@ -78,9 +78,9 @@ const Resume = () => {
             <motion.div
               key={index}
               variants={fadeIn("up", "spring", index * 0.1, 0.75)}
-              className="glass-effect rounded-xl p-4 sm:p-6 border border-purple-500/20 hover:border-purple-500/50 transition-all duration-300 group"
+              className="glass-effect rounded-xl p-4 sm:p-6 border border-teal-500/20 hover:border-teal-500/50 transition-all duration-300 group"
             >
-              <div className="text-purple-400 mb-2 sm:mb-3 group-hover:scale-110 transition-transform duration-300">
+              <div className="text-teal-400 mb-2 sm:mb-3 group-hover:scale-110 transition-transform duration-300">
                 {highlight.icon}
               </div>
               <h3 className="text-white font-bold text-base sm:text-lg mb-1">{highlight.title}</h3>
@@ -94,12 +94,12 @@ const Resume = () => {
           variants={fadeIn("up", "spring", 0.2, 0.75)}
           className="mt-8 sm:mt-12"
         >
-          <div className="glass-effect rounded-2xl p-5 sm:p-8 border border-purple-500/30 mx-auto">
+          <div className="glass-effect rounded-2xl p-5 sm:p-8 border border-teal-500/30 mx-auto">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-5 sm:gap-6">
               {/* Left Side - Info */}
               <div className="flex-1 w-full">
                 <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0 rounded-xl bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0 rounded-xl bg-gradient-to-br from-teal-600 to-emerald-600 flex items-center justify-center">
                     <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
@@ -115,10 +115,10 @@ const Resume = () => {
                 </p>
 
                 <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4">
-                  <span className="px-3 py-1 text-xs rounded-full bg-purple-500/10 text-purple-300 border border-purple-500/20">
+                  <span className="px-3 py-1 text-xs rounded-full bg-teal-500/10 text-teal-300 border border-teal-500/20">
                     PDF Format
                   </span>
-                  <span className="px-3 py-1 text-xs rounded-full bg-blue-500/10 text-blue-300 border border-blue-500/20">
+                  <span className="px-3 py-1 text-xs rounded-full bg-emerald-500/10 text-blue-300 border border-emerald-500/20">
                     Updated Recently
                   </span>
                   <span className="px-3 py-1 text-xs rounded-full bg-green-500/10 text-green-300 border border-green-500/20">
@@ -134,7 +134,7 @@ const Resume = () => {
                   download="Himanshu_Joshi_Resume.pdf"
                   className="group w-full md:w-auto"
                 >
-                  <button className="w-full px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold text-sm sm:text-base text-white bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/50 flex items-center justify-center gap-2 whitespace-nowrap">
+                  <button className="w-full px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold text-sm sm:text-base text-white bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-teal-500/50 flex items-center justify-center gap-2 whitespace-nowrap">
                     <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
@@ -148,7 +148,7 @@ const Resume = () => {
                   rel="noopener noreferrer"
                   className="group w-full md:w-auto"
                 >
-                  <button className="w-full px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold text-sm sm:text-base text-white glass-effect border border-purple-500/50 hover:border-purple-500 transition-all duration-300 transform hover:scale-105 hover:bg-purple-500/10 flex items-center justify-center gap-2 whitespace-nowrap">
+                  <button className="w-full px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold text-sm sm:text-base text-white glass-effect border border-teal-500/50 hover:border-teal-500 transition-all duration-300 transform hover:scale-105 hover:bg-teal-500/10 flex items-center justify-center gap-2 whitespace-nowrap">
                     <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
@@ -172,14 +172,14 @@ const Resume = () => {
               <motion.div
                 key={category}
                 variants={fadeIn("right", "spring", index * 0.1, 0.75)}
-                className="glass-effect rounded-xl p-4 sm:p-6 border border-purple-500/20"
+                className="glass-effect rounded-xl p-4 sm:p-6 border border-teal-500/20"
               >
-                <h4 className="text-purple-400 font-semibold text-base sm:text-lg mb-3 sm:mb-4">{category}</h4>
+                <h4 className="text-teal-400 font-semibold text-base sm:text-lg mb-3 sm:mb-4">{category}</h4>
                 <div className="flex flex-wrap gap-1.5 sm:gap-2">
                   {skillList.map((skill) => (
                     <span
                       key={skill}
-                      className="px-2.5 sm:px-3 py-1 text-xs sm:text-sm rounded-lg bg-gray-800/50 text-gray-300 border border-gray-700 hover:border-purple-500/50 transition-colors duration-200"
+                      className="px-2.5 sm:px-3 py-1 text-xs sm:text-sm rounded-lg bg-gray-800/50 text-gray-300 border border-gray-700 hover:border-teal-500/50 transition-colors duration-200"
                     >
                       {skill}
                     </span>
@@ -195,19 +195,19 @@ const Resume = () => {
           variants={fadeIn("up", "spring", 0.4, 0.75)}
           className="mt-8 sm:mt-12 text-center"
         >
-          <div className="glass-effect rounded-xl p-5 sm:p-8 border border-purple-500/20 mx-auto">
+          <div className="glass-effect rounded-xl p-5 sm:p-8 border border-teal-500/20 mx-auto">
             <h3 className="text-white font-bold text-lg sm:text-xl mb-2 sm:mb-3">Interested in Working Together?</h3>
             <p className="text-gray-400 text-sm sm:text-base mb-5 sm:mb-6">
               I'm actively looking for exciting opportunities. Let's discuss how I can contribute to your team.
             </p>
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 justify-center">
               <a href="#contact" className="w-full sm:w-auto">
-                <button className="w-full sm:w-auto px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold text-sm sm:text-base text-white bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105">
+                <button className="w-full sm:w-auto px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold text-sm sm:text-base text-white bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 transition-all duration-300 transform hover:scale-105">
                   Get In Touch
                 </button>
               </a>
               <a href="https://www.linkedin.com/in/itshimanshujoshi" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-                <button className="w-full sm:w-auto px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold text-sm sm:text-base text-white glass-effect border border-purple-500/50 hover:border-purple-500 transition-all duration-300 transform hover:scale-105">
+                <button className="w-full sm:w-auto px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold text-sm sm:text-base text-white glass-effect border border-teal-500/50 hover:border-teal-500 transition-all duration-300 transform hover:scale-105">
                   LinkedIn Profile
                 </button>
               </a>

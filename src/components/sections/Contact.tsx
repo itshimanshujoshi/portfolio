@@ -46,7 +46,7 @@ const Contact = () => {
               href="https://www.linkedin.com/in/itshimanshujoshi"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-2xl font-semibold transition-colors break-all text-blue-400 underline"
+              className="text-2xl font-semibold transition-colors break-all text-emerald-400 underline"
             >
               Visit My LinkedIn Profile
             </a>

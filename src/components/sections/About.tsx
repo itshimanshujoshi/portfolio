@@ -30,13 +30,13 @@ const ServiceCard: React.FC<IServiceCard> = ({ index, title, icon }) => (
     >
       <div className="relative group">
         {/* Main Card */}
-        <div className="glass-effect rounded-2xl p-4 sm:p-6 border border-purple-500/20 hover:border-purple-500/50 transition-all duration-300 min-h-[250px] sm:min-h-[300px] flex flex-col items-center justify-center relative overflow-hidden">
+        <div className="glass-effect rounded-2xl p-4 sm:p-6 border border-teal-500/20 hover:border-teal-500/50 transition-all duration-300 min-h-[250px] sm:min-h-[300px] flex flex-col items-center justify-center relative overflow-hidden">
           {/* Holographic Gradient Background on Hover */}
           <div className="absolute inset-0 holographic-gradient opacity-0 group-hover:opacity-10 transition-opacity duration-500" />
 
           {/* Corner Decorations */}
-          <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-purple-500/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-blue-500/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-teal-500/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-emerald-500/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
           {/* Icon Container with Floating Effect */}
           <motion.div
@@ -52,14 +52,14 @@ const ServiceCard: React.FC<IServiceCard> = ({ index, title, icon }) => (
             }}
           >
             {/* Glow Effect Behind Icon */}
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full blur-xl opacity-50 group-hover:opacity-70 transition-opacity duration-300" />
+            <div className="absolute inset-0 bg-gradient-to-br from-teal-500 to-emerald-500 rounded-full blur-xl opacity-50 group-hover:opacity-70 transition-opacity duration-300" />
 
             {/* Icon Background */}
-            <div className="relative w-full h-full rounded-2xl bg-gradient-to-br from-purple-900/50 to-blue-900/50 p-4 flex items-center justify-center border border-purple-500/30 group-hover:border-purple-500/70 transition-all duration-300">
+            <div className="relative w-full h-full rounded-2xl bg-gradient-to-br from-slate-900/80 to-teal-900/30 p-4 flex items-center justify-center border border-teal-500/30 group-hover:border-teal-500/70 transition-all duration-300">
               <img
                 src={icon}
                 alt={title}
-                className="w-full h-full object-contain filter group-hover:drop-shadow-[0_0_10px_rgba(99,102,241,0.8)] transition-all duration-300"
+                className="w-full h-full object-contain filter group-hover:drop-shadow-[0_0_10px_rgba(20,184,166,0.8)] transition-all duration-300"
               />
             </div>
 
@@ -71,12 +71,12 @@ const ServiceCard: React.FC<IServiceCard> = ({ index, title, icon }) => (
           </motion.div>
 
           {/* Title */}
-          <h3 className="text-center text-base sm:text-lg font-bold text-white leading-tight relative z-10 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-blue-400 transition-all duration-300 px-2">
+          <h3 className="text-center text-base sm:text-lg font-bold text-white leading-tight relative z-10 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-teal-400 group-hover:to-emerald-400 transition-all duration-300 px-2">
             {title}
           </h3>
 
           {/* Index Number */}
-          <div className="absolute top-3 right-3 sm:top-4 sm:right-4 text-purple-500/30 font-bold text-2xl sm:text-4xl group-hover:text-purple-500/50 transition-colors duration-300">
+          <div className="absolute top-3 right-3 sm:top-4 sm:right-4 text-teal-500/30 font-bold text-2xl sm:text-4xl group-hover:text-teal-500/50 transition-colors duration-300">
             0{index + 1}
           </div>
 
@@ -85,7 +85,7 @@ const ServiceCard: React.FC<IServiceCard> = ({ index, title, icon }) => (
             {[...Array(3)].map((_, i) => (
               <motion.div
                 key={i}
-                className="absolute w-1 h-1 bg-purple-400 rounded-full"
+                className="absolute w-1 h-1 bg-teal-400 rounded-full"
                 style={{
                   top: `${20 + i * 30}%`,
                   left: `${10 + i * 30}%`,
@@ -105,7 +105,7 @@ const ServiceCard: React.FC<IServiceCard> = ({ index, title, icon }) => (
         </div>
 
         {/* Glow Effect Below Card */}
-        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-purple-600/20 to-blue-600/20 blur-2xl rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-teal-600/20 to-emerald-600/20 blur-2xl rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4" />
       </div>
     </motion.div>
   </Tilt>
@@ -115,8 +115,8 @@ const About = () => {
   return (
     <div className="relative">
       {/* Background Effects */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl" />
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-teal-600/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-emerald-600/10 rounded-full blur-3xl" />
 
       <div className="relative z-10">
         <Header useMotion={true} {...config.sections.about} />
@@ -127,11 +127,11 @@ const About = () => {
           className="mt-6 relative"
         >
           {/* Corner Accents */}
-          <div className="absolute -top-2 -left-2 w-12 h-12 border-t-2 border-l-2 border-purple-500" />
-          <div className="absolute -bottom-2 -right-2 w-12 h-12 border-b-2 border-r-2 border-blue-500" />
+          <div className="absolute -top-2 -left-2 w-12 h-12 border-t-2 border-l-2 border-teal-500" />
+          <div className="absolute -bottom-2 -right-2 w-12 h-12 border-b-2 border-r-2 border-emerald-500" />
 
           {/* Content Box */}
-          <div className="glass-effect rounded-xl p-6 md:p-8 border border-purple-500/30 relative overflow-hidden">
+          <div className="glass-effect rounded-xl p-6 md:p-8 border border-teal-500/30 relative overflow-hidden">
             {/* Animated Background Pattern */}
             <div className="absolute inset-0 opacity-5">
               <div className="cyber-grid w-full h-full" />
@@ -146,9 +146,9 @@ const About = () => {
               >
                 <div className="relative w-40 h-40 md:w-48 md:h-48">
                   {/* Glow */}
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-500 via-blue-500 to-indigo-500 blur-xl opacity-40" />
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-teal-500 via-emerald-500 to-teal-600 blur-xl opacity-40" />
                   {/* Border frame */}
-                  <div className="relative w-full h-full rounded-2xl p-0.5 bg-gradient-to-br from-purple-500 via-blue-500 to-indigo-500">
+                  <div className="relative w-full h-full rounded-2xl p-0.5 bg-gradient-to-br from-teal-500 via-emerald-500 to-teal-600">
                     <div className="w-full h-full rounded-2xl overflow-hidden bg-black/50">
                       <img
                         src="/profile2.png"
@@ -158,8 +158,8 @@ const About = () => {
                     </div>
                   </div>
                   {/* Corner decorations */}
-                  <div className="absolute -top-1 -left-1 w-4 h-4 border-t-2 border-l-2 border-purple-400" />
-                  <div className="absolute -bottom-1 -right-1 w-4 h-4 border-b-2 border-r-2 border-blue-400" />
+                  <div className="absolute -top-1 -left-1 w-4 h-4 border-t-2 border-l-2 border-teal-400" />
+                  <div className="absolute -bottom-1 -right-1 w-4 h-4 border-b-2 border-r-2 border-emerald-400" />
                 </div>
               </motion.div>
 
@@ -170,7 +170,7 @@ const About = () => {
                 </p>
 
                 {/* Accent Line */}
-                <div className="mt-4 h-0.5 w-24 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full" />
+                <div className="mt-4 h-0.5 w-24 bg-gradient-to-r from-teal-500 to-emerald-500 rounded-full" />
 
                 {/* Stats Grid */}
                 <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
@@ -182,7 +182,7 @@ const About = () => {
                   ].map((stat, index) => (
                     <motion.div
                       key={index}
-                      className="glass-effect rounded-lg p-2 sm:p-3 border border-purple-500/20 text-center hover:border-purple-500/50 transition-all duration-300"
+                      className="glass-effect rounded-lg p-2 sm:p-3 border border-teal-500/20 text-center hover:border-teal-500/50 transition-all duration-300"
                       whileHover={{ scale: 1.05, y: -5 }}
                     >
                       <div className="text-xl sm:text-2xl font-bold futuristic-text">{stat.value}</div>

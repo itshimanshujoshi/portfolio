@@ -26,20 +26,20 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
         tiltMaxAngleY={5}
         scale={1.02}
       >
-        <div className="group relative w-full cursor-pointer overflow-hidden rounded-xl min-h-[320px] flex flex-col bg-gradient-to-br from-gray-900/90 to-purple-900/20 border border-purple-500/20 hover:border-purple-500/50 transition-all duration-300">
+        <div className="group relative w-full cursor-pointer overflow-hidden rounded-xl min-h-[320px] flex flex-col bg-gradient-to-br from-slate-900/90 to-teal-900/20 border border-teal-500/20 hover:border-teal-500/50 transition-all duration-300">
           {/* Content */}
           <div className="relative flex-1 flex flex-col p-5 sm:p-6">
             {/* Project Number Badge */}
             <div className="flex items-center justify-between mb-3 sm:mb-4">
               <div className="flex items-center gap-2 sm:gap-3">
-                <div className="flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-lg bg-gradient-to-br from-purple-600 to-blue-600 text-white font-bold text-xs sm:text-sm">
+                <div className="flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-lg bg-gradient-to-br from-teal-600 to-emerald-600 text-white font-bold text-xs sm:text-sm">
                   {String(index + 1).padStart(2, '0')}
                 </div>
               </div>
             </div>
 
             {/* Project Name */}
-            <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-blue-400 transition-all duration-300 line-clamp-2">
+            <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-teal-400 group-hover:to-emerald-400 transition-all duration-300 line-clamp-2">
               {name}
             </h3>
 
@@ -53,7 +53,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
               {tags.map((tag) => (
                 <span
                   key={tag.name}
-                  className={`${tag.color} rounded-full px-2 sm:px-3 py-0.5 sm:py-1 text-[10px] sm:text-xs font-medium border border-purple-500/20`}
+                  className={`${tag.color} rounded-full px-2 sm:px-3 py-0.5 sm:py-1 text-[10px] sm:text-xs font-medium border border-teal-500/20`}
                 >
                   #{tag.name}
                 </span>
@@ -62,7 +62,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
           </div>
 
           {/* Bottom Accent Line */}
-          <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-purple-500 to-blue-500 group-hover:w-full transition-all duration-500" />
+          <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-teal-500 to-emerald-500 group-hover:w-full transition-all duration-500" />
         </div>
       </Tilt>
     </motion.div>
@@ -73,7 +73,7 @@ const Works = () => {
   return (
     <div className="relative">
       {/* Background Effects */}
-      <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-purple-600/5 rounded-full blur-3xl" />
+      <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-teal-600/5 rounded-full blur-3xl" />
 
       <div className="relative z-10">
         <Header useMotion={true} {...config.sections.works} />

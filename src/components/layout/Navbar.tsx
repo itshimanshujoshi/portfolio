@@ -55,7 +55,7 @@ const Navbar = () => {
         styles.paddingX
       } fixed top-0 z-20 flex w-full items-center py-5 transition-all duration-300 ${
         scrolled
-          ? "glass-effect border-b border-purple-500/30 backdrop-blur-xl shadow-lg shadow-purple-500/10"
+          ? "glass-effect border-b border-teal-500/30 backdrop-blur-xl shadow-lg shadow-teal-500/10"
           : "bg-transparent"
       }`}
     >
@@ -75,22 +75,22 @@ const Navbar = () => {
             whileTap={{ scale: 0.95 }}
           >
             {/* Animated Border */}
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg opacity-0 group-hover:opacity-100 blur-sm transition-opacity duration-300" />
+            <div className="absolute inset-0 bg-gradient-to-r from-teal-600 to-emerald-600 rounded-lg opacity-0 group-hover:opacity-100 blur-sm transition-opacity duration-300" />
 
             {/* Logo Circle */}
-            <div className="relative flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-purple-600 to-blue-600 shadow-lg shadow-purple-500/30 group-hover:shadow-purple-500/50 transition-all duration-300">
+            <div className="relative flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-teal-600 to-emerald-600 shadow-lg shadow-teal-500/30 group-hover:shadow-teal-500/50 transition-all duration-300">
               <span className="text-white font-bold text-xl">H</span>
             </div>
           </motion.div>
 
           {/* Brand Text */}
-          <p className="flex cursor-pointer text-[18px] font-bold text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-blue-400 transition-all duration-300">
+          <p className="flex cursor-pointer text-[18px] font-bold text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-teal-400 group-hover:to-emerald-400 transition-all duration-300">
             {config.html.title}
           </p>
 
           {/* Decorative Line */}
           <motion.div
-            className="h-[2px] bg-gradient-to-r from-purple-500 to-transparent"
+            className="h-[2px] bg-gradient-to-r from-teal-500 to-transparent"
             initial={{ width: 0 }}
             animate={{ width: scrolled ? 0 : 20 }}
             transition={{ duration: 0.3 }}
@@ -117,7 +117,7 @@ const Navbar = () => {
 
                 {/* Underline Effect */}
                 <span
-                  className={`absolute -bottom-1 left-0 h-[2px] bg-gradient-to-r from-purple-500 to-blue-500 transition-all duration-300 ${
+                  className={`absolute -bottom-1 left-0 h-[2px] bg-gradient-to-r from-teal-500 to-emerald-500 transition-all duration-300 ${
                     active === nav.id ? "w-full" : "w-0 group-hover:w-full"
                   }`}
                 />
@@ -125,7 +125,7 @@ const Navbar = () => {
                 {/* Glow Effect on Active */}
                 {active === nav.id && (
                   <motion.span
-                    className="absolute inset-0 bg-purple-500/10 blur-xl rounded-full -z-10"
+                    className="absolute inset-0 bg-teal-500/10 blur-xl rounded-full -z-10"
                     layoutId="navHighlight"
                     transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                   />
@@ -142,7 +142,7 @@ const Navbar = () => {
             onClick={() => setToggle(!toggle)}
             className="cursor-pointer"
           >
-            <div className="glass-effect p-2 rounded-lg border border-purple-500/30 hover:border-purple-500/50 transition-all duration-300">
+            <div className="glass-effect p-2 rounded-lg border border-teal-500/30 hover:border-teal-500/50 transition-all duration-300">
               <img
                 src={toggle ? close : menu}
                 alt="menu"
@@ -162,11 +162,11 @@ const Navbar = () => {
             transition={{ duration: 0.2 }}
             className={`${
               !toggle ? "hidden" : "flex"
-            } glass-effect absolute right-0 top-20 z-10 mx-4 my-2 min-w-[200px] rounded-xl p-6 border border-purple-500/30 shadow-2xl shadow-purple-500/20`}
+            } glass-effect absolute right-0 top-20 z-10 mx-4 my-2 min-w-[200px] rounded-xl p-6 border border-teal-500/30 shadow-2xl shadow-teal-500/20`}
           >
             {/* Corner Decorations */}
-            <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-purple-500/50" />
-            <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-blue-500/50" />
+            <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-teal-500/50" />
+            <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-emerald-500/50" />
 
             <ul className="flex flex-1 list-none flex-col items-start justify-end gap-4">
               {navLinks.map((nav, index) => (
@@ -181,15 +181,15 @@ const Navbar = () => {
                     href={`#${nav.id}`}
                     className={`font-poppins cursor-pointer text-[16px] font-medium ${
                       active === nav.id
-                        ? "text-white bg-gradient-to-r from-purple-600/20 to-blue-600/20 px-3 py-2 rounded-lg border border-purple-500/30"
-                        : "text-gray-400 hover:text-white px-3 py-2 hover:bg-purple-500/10 rounded-lg"
+                        ? "text-white bg-gradient-to-r from-teal-600/20 to-emerald-600/20 px-3 py-2 rounded-lg border border-teal-500/30"
+                        : "text-gray-400 hover:text-white px-3 py-2 hover:bg-teal-500/10 rounded-lg"
                     } transition-all duration-300 block`}
                     onClick={() => {
                       setToggle(!toggle);
                     }}
                   >
                     <span className="flex items-center gap-2">
-                      <span className="text-purple-400">▹</span>
+                      <span className="text-teal-400">▹</span>
                       {nav.title}
                     </span>
                   </a>
@@ -202,7 +202,7 @@ const Navbar = () => {
 
       {/* Scanline Effect (Subtle) */}
       {scrolled && (
-        <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-purple-500/50 to-transparent" />
+        <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-teal-500/50 to-transparent" />
       )}
     </nav>
   );
