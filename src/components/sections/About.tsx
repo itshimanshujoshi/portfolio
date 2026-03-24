@@ -151,7 +151,7 @@ const About = () => {
                   <div className="relative w-full h-full rounded-2xl p-0.5 bg-gradient-to-br from-teal-500 via-emerald-500 to-teal-600">
                     <div className="w-full h-full rounded-2xl overflow-hidden bg-black/50">
                       <img
-                        src="/profile.png"
+                        src="/himanshu.jpg"
                         alt={config.hero.name}
                         className="w-full h-full object-cover object-top"
                       />
